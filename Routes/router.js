@@ -15,5 +15,11 @@ router.post('/admin/login', adminController.adminLogin);
 router.post('/addbook', bookController.addBook);
 
 
+// list books
+router.get('/listbooks', bookController.getAllBooks)
+
+
+// delete books
+router.delete('/deletebook/:id', bookController.deleteBook)
 
 module.exports = router;
